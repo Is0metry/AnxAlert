@@ -41,18 +41,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
-        let context:NSManagedObjectContext = appDel.managedObjectContext!
-        let request = NSFetchRequest(entityName: "Log")
-        request.returnsObjectsAsFaults = false
-        let results = (try! context.executeFetchRequest(request)) as! [NSManagedObject]
-        for res in results {
-            let record = InstanceReport()
-            let date = res.valueForKey("time") as! NSDate
-            record.time = date
-            record.face = res.valueForKey("mood") as! String
-            data.array.append(record)
-        }
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 

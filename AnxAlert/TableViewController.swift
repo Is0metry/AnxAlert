@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import CoreData
 class TableViewController: UITableViewController {
     var transferPoint = 0
     required init(coder aDecoder: NSCoder) {
@@ -16,8 +16,19 @@ class TableViewController: UITableViewController {
     var data:ReportCatalog = ReportCatalog()
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("\(data.array.count)")
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context:NSManagedObjectContext = appDel.managedObjectContext!
+        let request = NSFetchRequest(entityName: "Log")
+        request.returnsObjectsAsFaults = false
+        let results = (try! context.executeFetchRequest(request)) as! [NSManagedObject]
+        for res in results {
+            let record = InstanceReport()
+            let date = res.valueForKey("time") as! NSDate
+            record.time = date
+            record.face = res.valueForKey("mood") as! String
+            data.array.append(record)
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

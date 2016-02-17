@@ -81,6 +81,7 @@
 				EF88C18D1A9BB34E009CA04B /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		EF88C18D1A9BB34E009CA04B /* Products */ = {
 			isa = PBXGroup;
