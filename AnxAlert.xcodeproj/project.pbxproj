@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF6549C61C75021A0032DA86 /* NoteTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6549C51C75021A0032DA86 /* NoteTextView.swift */; };
 		EF88C1921A9BB34E009CA04B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF88C1911A9BB34E009CA04B /* AppDelegate.swift */; };
 		EF88C1971A9BB34E009CA04B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF88C1961A9BB34E009CA04B /* ViewController.swift */; };
 		EF88C19A1A9BB34E009CA04B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF88C1981A9BB34E009CA04B /* Main.storyboard */; };
@@ -34,7 +33,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EF6549C51C75021A0032DA86 /* NoteTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTextView.swift; sourceTree = "<group>"; };
 		EF88C18C1A9BB34E009CA04B /* AnxAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnxAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF88C1901A9BB34E009CA04B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF88C1911A9BB34E009CA04B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 				EF88C1961A9BB34E009CA04B /* ViewController.swift */,
 				EF88C1BE1A9BD64D009CA04B /* PanicViewController.swift */,
 				EF88C1981A9BB34E009CA04B /* Main.storyboard */,
-				EF6549C51C75021A0032DA86 /* NoteTextView.swift */,
 				EF88C1B81A9BBD0F009CA04B /* TableViewController.swift */,
 				EF88C19B1A9BB34E009CA04B /* Images.xcassets */,
 				EF88C1B61A9BBBF5009CA04B /* ReportCatalog.swift */,
@@ -246,7 +243,6 @@
 				EF88C1C41A9BF50B009CA04B /* AnxAlert.xcdatamodeld in Sources */,
 				EF88C1B71A9BBBF5009CA04B /* ReportCatalog.swift in Sources */,
 				EF88C1921A9BB34E009CA04B /* AppDelegate.swift in Sources */,
-				EF6549C61C75021A0032DA86 /* NoteTextView.swift in Sources */,
 				EF88C1BF1A9BD64D009CA04B /* PanicViewController.swift in Sources */,
 				EF88C1BD1A9BD39A009CA04B /* Contacts.swift in Sources */,
 			);
